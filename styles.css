@@ -1,0 +1,1360 @@
+@font-face {
+    font-family: Kaftan;
+    src: url(fonts/Kaftan\ -\ Trial.otf);
+}
+html {
+    background-color: white;
+}
+body {
+    background-color: #F57D49;
+    width: 1920px;
+    font-family: "Bricolage Grotesque";
+    font-weight: 100;
+    margin: 0;
+}
+
+h1 {
+    margin: 32px 0 0;
+    padding: 0;
+    
+    font-family: Kaftan;
+    color: white;
+    text-transform: uppercase;
+    font-size: 113px;
+    font-weight: 100;
+    line-height: 1.0;
+   
+}
+
+h2 {
+    font-family: Kaftan;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 64px;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+p, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: filter 0.1s ease;
+    cursor: pointer;
+}
+
+a:hover {
+  filter: brightness(0.8);
+}
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.safe-zone {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+
+/*!!!!!!!!!!!!!!*/
+
+header {
+    height: 120px;
+
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.nav-header {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+.nav-header-left, .nav-header-right {
+    display: flex;
+    gap: 100px;
+}
+
+.nav-header a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.header-logo { /* Lotus */
+    position: absolute;
+}
+
+
+/*!!!!!!!!!!!!!!!*/
+.hero {
+    height: 960px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+
+    background-image: url(./assets/meditating-lady.jpg);
+    background-size: 2270px auto;
+    background-position: right 0px top -200px; /* specify anchors right, top etc. bo jakas zalupa z borderamy */
+    background-repeat: no-repeat;
+   
+}
+
+.hero-top-circle {
+    margin-top: 50px;
+}
+
+.hero-center-circles{
+    margin-top: 88px;
+}
+
+.hero > p {
+    width: 558px;
+    height: 50px;
+    margin: 30px 0 0 0;
+
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero > button{
+    width: 174px;
+    height: 54px;
+    padding: 16px 32px;
+    margin-top: 88px;
+    
+    background-color: #F57D49;
+    border: 0;
+    border-radius: 100px;
+    color: white;
+
+    font-size: 18px;
+}
+
+
+.hero > button:active {
+    filter: brightness(1.2);
+    border: 2px solid white;
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.about {
+    height: 854px;
+    padding: 150px 100px;
+
+    display: grid;
+    grid-template-columns: 481px 558px 481px;
+    grid-template-rows: 86px 482px 86px;
+    gap:100px;
+    
+    background-color: #eae6e1;
+}
+
+
+.about-image-container {
+    width: 481px;
+    height: 668px;   
+}
+.about-image-container > img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.about-image-container > .image1 {
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.about-image-container > .image2 {
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.about > h2 {
+    grid-column-start: 2;
+    font-size: 64px;
+    text-align: center;
+}
+
+
+.about-description > h3 {
+    margin-bottom: 12px;
+}
+
+.about-description > p {
+    margin-bottom: 30px;
+
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.about-description > p:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+.about-statistics {
+    display: flex;
+    grid-area: 3/2/4/4;
+    justify-content: space-between;
+}
+
+.about-statistics h4 {
+    color:#F57D49;
+    font-size: 48px;
+}
+
+.about-statistics p {
+    font-size: 18px;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!*/
+
+.benefits {
+    height: 682px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #eae6e1;
+}
+
+.benefits > h2{
+    margin-bottom: 100px;
+
+    text-transform: uppercase;
+    font-size: 64px;
+}
+
+.benefits-list {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefits-list > li {
+    display: flex;
+    flex-basis: 304px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.benefits-list h3 {
+    margin-top: 30px;
+
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.benefits-small-moons {
+    margin-top: 42px;
+}
+
+.benefits-big-moons {
+    margin-top: 39px;
+}
+
+.benefits p {
+    margin-top: 12px;
+
+    font-size: 18px;
+    text-align: center;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!*/
+
+.classes-background {
+    height: 1514px;
+
+    background-color: #eae6e1;
+}
+.classes-top {
+    height: 989px;
+    padding: 150px 245px 0px 245px;
+
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+
+    background-color: #1A1A1A;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.classes-top > h2 {
+    color: white;
+}
+
+.classes-yoga-type-radio {
+    width: 100%;
+    margin-top: 100px;
+
+    display: flex;
+    justify-content: space-between;
+
+    color: #6C615D;
+    line-height: 1.4;
+    font-weight: 400;
+    font-size: 18px;
+
+    position: relative;
+}
+
+.classes-yoga-type-radio input {
+    position: absolute;
+    opacity: 0;
+}
+.classes-yoga-type-radio label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.classes-yoga-type-radio .radiobtn {
+    width: 16px;
+    height: 16px;
+    margin-top: 16px;
+
+    border-radius: 50%;
+    background-color: #F57D49;
+
+    transform: scale(0);
+    transition: transform;
+ 
+}
+
+.classes-yoga-type-radio input:checked ~ *{
+    color: #F57D49;
+}
+
+.classes-yoga-type-radio input:checked + span + .radiobtn {
+    transform: scale(1);
+}
+
+
+.classes-yoga-description {
+    width: 100%;
+    margin-top: 50px;
+    
+    display: flex;
+    justify-content: space-between;
+
+    color: white;
+}
+
+.classes-yoga-description  h3 {
+    margin-bottom: 12px;
+}
+
+.classes-yoga-description  p {
+    font-size: 18px;
+}
+
+
+.classes-yoga-about {
+    width: 703px;
+}
+
+.classes-yoga-specifics {
+    width: 412px;
+}
+
+.classes-yoga-shedule {
+    width: 272px;
+
+    display: flex;
+    flex-direction: column;
+    gap:18px;
+}
+
+.classes-yoga-shedule > li {
+    display: flex;
+}
+
+.classes-yoga-shedule-icon {
+    margin-right: 14px;
+}
+
+#instructor-title{
+    font-size: 14px;
+}
+
+
+
+.classes-teacher-image-container {
+    width: 1430px;
+    height: 750px;
+    margin-top: 30px;
+  
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.classes-teacher-image-container > img {
+    width: 100%;
+    object-fit: cover;
+    object-position: 0px -500px;
+}
+
+.classes-teacher-image-cut {
+    position: relative;
+}
+.classes-teacher-image-left-cut {
+    width: 100px;
+    height: 100px;
+  
+    position: absolute;
+    right: 715px;
+
+    background-color: transparent;
+    background-image: -webkit-radial-gradient(0% 100%, circle, transparent 100px, black 0);
+}
+
+.classes-teacher-image-right-cut {
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    right: 615px;
+
+    background-color: transparent;
+    background-image: -webkit-radial-gradient(100% 100%, circle, transparent 100px, black 0);
+
+}
+
+.classes-teacher-image-cut svg {
+    position: absolute;
+    right: 707px;
+}
+.classes-top > button {
+    width: 174px;
+    height: 54px;
+    padding: 16px 32px;
+
+    border: 0;
+    border-radius: 100px;
+
+    position: relative;
+    top: -27px;
+
+    background-color: #F57D49;
+    
+    color: white;
+    font-size: 18px;
+  
+}
+
+
+.classes-top > button:active {
+    filter: brightness(1.2);
+}
+
+.left-arrow, .right-arrow {
+    position: absolute;
+    bottom: 100px;
+}
+
+.left-arrow {
+    left: 100px;
+}
+.right-arrow {
+    right: 100px;
+}
+
+/*!!!!!!!!!!!!!!!*/
+
+.schedule {
+    height: 902px;
+    padding-left: 391px;
+    padding-right: 391px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #eae6e1;
+}
+
+.schedule-day {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 18px;
+    color: #A18E85;
+    
+}
+
+.schedule-day label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.schedule-day input {
+    position: absolute;
+    opacity: 0;
+}
+
+.schedule-day .radiobtn {
+    width: 16px;
+    height: 16px;
+    margin-top: 16px;
+
+    border-radius: 50%;
+    background-color: #F57D49;
+
+    transform: scale(0);
+    transition: transform;
+}
+
+.schedule-day input:checked + span {
+    color: #F57D49;
+}
+
+.schedule-day input:checked + span + .radiobtn {
+    transform: scale(1);
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+td {
+    height: 74px;
+
+    border-top: #F57D49 solid 1px;
+    border-bottom: #F57D49 solid 1px;
+}
+
+table .schedule-yoga-type {
+    width: 230px;
+
+    font-size: 24px;
+    font-weight: 500;
+}
+
+table .schedule-time, .schedule-yoga-duration{
+    width: 180px;
+    padding-left: 137px;
+
+    font-size: 18px;
+    font-weight: 400;
+}
+
+table .schedule-yoga-duration {
+    width: 120px;
+}
+
+table .schedule-yoga-instructor {
+    padding-left: 137px;
+}
+
+table .schedule-yoga-instructor svg{
+    margin-right: 14px;
+    margin-top: 2.5px;
+
+    float: left;
+}
+
+table .schedule-instructor{
+    font-size: 14px;
+    font-weight: 400; 
+}
+
+table .schedule-instructor-name {
+    font-size: 18px;
+    font-weight: 400; 
+}
+
+/*!!!!!!!!!!!!!!!*/
+
+.instructor-block {
+    height: 1527px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #eae6e1;
+}
+.instructor-block > h2 {
+    margin-bottom: 100px;
+}
+.instructor-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 50px;
+
+}
+
+.instructor-list > li {
+    width: 540px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.instructor-img {
+    height: 350px;
+    width: 350px;
+    margin-bottom: 30px;
+
+    border-radius: 350px;
+
+    position: relative;
+}
+
+.instructor-img-clip {
+    height: 100%;
+    width: 100%;
+
+    border-radius: 50%;
+    
+    overflow: hidden;
+}
+
+.instructor-img::before {
+    content: "";
+    height: 348px;
+    width: 348px; /*WTFFFAAAK*/
+
+    border: 2px solid white;
+   
+    border-radius: 350px;
+    position: absolute;
+}
+
+
+
+/*Instructors image positioning*/
+.instructor-list > li:nth-child(1) img {
+    width: 160%;
+    object-position: -40px;
+}
+
+.instructor-list > li:nth-child(2) img {
+    width: 130%;
+    object-position: -50px;
+}
+
+.instructor-list > li:nth-child(3) img {
+    width: 150%;
+    object-position: -150px;
+}
+
+.instructor-list > li:nth-child(4) img {
+    width: 225%;
+    object-position: -250px;
+}
+
+.instructor-list > li:nth-child(5) img {
+    width: 150%;
+    object-position: -20px;
+}
+
+.instructor-list > li:nth-child(6) img {
+    width: 150%;
+    object-position: -100px -300px;
+}
+
+/*Instructore image border positioning*/
+
+.instructor-list > li:nth-child(1) .instructor-img::before {
+  transform: translateX(30px);
+}
+.instructor-list > li:nth-child(2) .instructor-img::before {
+  transform: translate(-20px, 20px);
+}
+.instructor-list > li:nth-child(3) .instructor-img::before {
+  transform: translateX(30px);
+}
+.instructor-list > li:nth-child(4) .instructor-img::before {
+  transform: translateX(-30px);
+}
+.instructor-list > li:nth-child(5) .instructor-img::before {
+    transform: translate(20px, -20px);
+}
+.instructor-list > li:nth-child(6) .instructor-img::before {
+  transform: translateX(-30px);
+}
+
+.instructor-list h3 {
+    margin-bottom: 8px;
+}
+
+.instructor-experience {
+    color: #F57D49;
+    margin-bottom: 16px;
+}
+.instructor-experience > svg {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+/*!!!!!!!!!!!!!!!!!!*/
+.quote-background {
+    height: 1080px;
+
+    background-color: #eae6e1;
+}
+.quote-image {
+    height: 100%;
+  
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    background-image: url(./assets/quote.jpg);
+    background-size: 1920px auto;
+    background-position: right 0px top -150px; /* specify anchors right, top etc. bo jakas zalupa z borderamy */
+    background-repeat: no-repeat;
+ 
+}
+
+.quote-image h2 {
+    margin-top: 450px;
+
+    color: white;
+    font-size: 47px;
+    font-weight: 400;
+    line-height: 1.35;
+    text-align: center;
+    font-family: Kaftan;
+}
+
+.quote-image h4 {
+    margin: 0;
+
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.quote-image svg {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*!!!!!!!!!!!!!!!!*/
+.reviews {
+    height: 799px;
+    padding: 150px 245px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #eae6e1;
+   
+}
+
+.reviews-users {
+    height: 613px;
+    width: 1430px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews-users > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.reviews-users  li:nth-child(1),
+.reviews-users  li:nth-child(3){ 
+    width: 412px;
+    height: 244px;
+}
+
+.reviews-users  li:nth-child(2) {
+    width: 558px;
+    height: 396px;
+
+    align-self: flex-end;
+}
+.reviews-users-img-small-container {
+    width: 100px;
+    height: 100px;
+
+    border-radius: 100px;
+
+    overflow: hidden;
+    
+}
+
+.reviews-users  li:nth-child(1) img,
+.reviews-users  li:nth-child(3) img { 
+    width: 100px;
+}
+
+.reviews-users-img-big-container {
+    width: 200px;
+    height: 200px;
+
+    border-radius: 200px;
+
+    overflow: hidden;
+}
+
+.reviews-users  li:nth-child(2) img {
+    width: 200px;
+}
+
+.reviews-users p {
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+
+.reviews-users  li:nth-child(2) p {
+    font-size: 18px;
+}
+
+.reviews-circles {
+    position: absolute;
+    transform: translateY(186px);
+}
+.reviews a {
+    position: absolute;
+}
+.reviews-left-arrow {
+    transform: translate(-800px, 551px)
+}
+
+.reviews-right-arrow {
+    transform: translate(800px, 551px)
+}
+
+/*!!!!!!!!!!!!*/
+.prices {
+    height: 866px;
+    padding: 0px 215px 150px 215px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #eae6e1;
+}
+
+.prices-container {
+    height: 680px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prices-container .prices-logo {
+    margin-bottom: 16px;
+}
+
+.prices-container > div {
+    width: 353px;
+    height: 548px;
+    padding: 50px;
+
+    border-radius: 50px;
+        outline: 2px solid transparent;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: white;
+
+    
+    
+}
+
+.prices-container .prices-12 {
+    width: 385px;
+    padding: 66px 50px;
+}
+
+.prices-container > div:hover{
+    background:
+    linear-gradient(#fff,#fff) padding-box,
+    linear-gradient(0deg, #F57D49, transparent) border-box;
+    box-shadow:
+    0 8px 20px -7px #F57D49;
+    
+}
+
+.prices-container ul {
+     width: 100%;
+     height: 152px;
+     margin-bottom: 50px;
+
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+}
+
+.prices-container li {
+    display: flex;
+    align-items: center;
+}
+
+.prices-container li svg {
+    margin-right: 8px
+}
+
+.prices-container li p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.prices-container div h3 {
+    margin-bottom: 50px;
+
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.prices-container div h4 {
+    margin-bottom: 31px;
+
+    color: #F57D49;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.prices-container button {
+    width: 100%;
+    height: 54px;
+
+    border: 0;
+    border-radius: 100px;
+
+    background-color:#F57D49;
+
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.0;
+    
+    transform: filter;
+
+}
+
+.prices-container button:hover {
+    filter: brightness(0.8);
+}
+
+.prices-container button:active {
+    filter: brightness(1);
+}
+
+.prices-popular {
+    position: absolute;
+    transform: translate(191px, -56px);
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!*/
+.contact-form-background-container {
+    background-color:#eae6e1;
+    
+}
+.contact-form-background {
+    height: 825px;
+    padding: 150px 325px;
+
+   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+
+    position: relative;
+}
+
+.contact-form-background::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+  
+    transform: scaleX(-1);
+
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    background-image: url(assets/contact-image.jpg);
+    background-size: 1950px;
+    background-repeat: no-repeat;
+    background-position: right -15px top -100px;
+    z-index: 0;
+    filter: brightness(0.9);
+}
+.contact-form-background > * {
+    z-index: 1;
+    position: relative; /*Why it matters, otherwise not shoiwing*/
+}
+.contact-form-background > h2 {
+    color: white;
+
+}
+.contact-form-background > form {
+    width: 454px;
+    height: 535px;
+    padding: 52px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    background-color: #EAE6E14D;
+}
+
+.form-introduction {
+    height: 91px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    color: white;
+}
+
+.form-introduction p {
+     size: 18px;
+     text-align: center;
+     font-weight: 400;
+}
+.orange-text-part, .orange-text-part > a {
+    color: #F57D49;
+}
+
+.contact-form-details {
+    height: 290px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-form-details > input,  .contact-form-details > select{
+    padding: 16px 0;
+
+    background: none;
+
+    border: 0;
+    border-bottom: 1px solid white;
+
+    color: #6C615D;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+
+}
+
+.terms-checkbox-container {
+    margin-top: 30px;
+
+    display: flex;
+    align-items: center;
+    
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+.terms-checkbox-container > input {
+    position: absolute;
+    opacity: 0;
+}
+
+.checkmark {
+    width: 27px;
+    height: 27px;
+    margin-right: 16px;
+
+    border-radius: 8px;
+    border: 2px solid #F57D49;
+
+    background-color: white;
+    
+}
+
+.terms-checkbox-container input:checked +.checkmark {
+    background: #F57D49;;
+}
+
+.terms-checkbox-container input:checked + .checkmark::after {
+    content: "✓";
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+form button {
+    height: 54px;
+
+    border: 0;
+    border-radius: 100px;
+
+    background-color: #F57D49;
+
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+/*!!!!!!!*/
+.faq-container {
+    height: 1074px;
+    padding: 150px 391px;
+
+    background-color: #eae6e1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-container  > h2 {
+    margin-bottom: 100px;
+}
+
+.faq-list {
+    width: 100%;
+}
+.faq-list li {
+    border-top: 1px solid #F57D49;
+}
+
+.faq-list li:last-child {
+    border-bottom: 1px solid #F57D49;
+}
+
+.faq-list summary {
+    padding: 24px 0px;
+
+    font-size: 24px;
+    font-weight: 500;
+    
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.faq-list p {
+    padding: 0px 0 24px;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+   
+}
+
+summary{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+  
+}
+
+details {
+    position: relative;
+}
+
+.summary-icon {
+    position: absolute;
+    right: 0;
+    transition: transform 10s ease;
+}
+
+details[open] .summary-icon {
+    transform: rotate(180deg);
+}
+/*!!!!!!!!*/
+
+footer {
+    height: 402px;
+    padding: 150px 100px;
+
+    background-color: #1A1A1A;
+
+    color: white;
+    font-size: 18px;
+    position: relative;
+    
+}
+
+.footer-flex-container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+   
+}
+.nav-footer {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-footer > ul {
+    display: flex;
+    flex-direction: column;
+    
+    height: 100%;
+    justify-content: space-between;
+}
+
+.nav-footer-top> li {
+    line-height: 1.4;
+}
+.nav-footer > ul > div{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+.footer-center {
+    position: absolute;
+    left: 827px;
+    top: 338px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 266px;
+}
+.footer-center > svg {
+    margin-bottom: 53px;
+}
+
+.footer-center > p:first-of-type {
+    margin-bottom: 16px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    width: 412px;
+}
+
+.footer-right > p{
+    margin-bottom: 30px;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 50px;
+}
+
+.footer-contacts > li {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+.footer-contacts > li > svg {
+    margin-right: 9px;
+}
+
+.nav-social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.footer-left-cut {
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    right: 960px;
+    top: 0px;
+
+    background-color: transparent;
+    background-image: -webkit-radial-gradient(0% 100%, circle, transparent 100px, #eae6e1 0);
+}
+
+.footer-right-cut {
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    right: 860px;
+    top: 0px;
+
+    background-color: transparent;
+    background-image: -webkit-radial-gradient(100% 100%, circle, transparent 100px, #EAE6E1 0);
+}
+
+.footer-circle {
+    position: absolute;
+    top: 0px;
+    right: 952px;
+}
